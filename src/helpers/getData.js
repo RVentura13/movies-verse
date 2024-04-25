@@ -1,5 +1,5 @@
 const url = 'https://api.themoviedb.org/3';
-const api_key = '8bd29352f60341b7589b767311bd8031';
+const api_key = import.meta.env.VITE_API_KEY;
 const language = 'language=es-ES';
 
 export const getData = async (typeOfList, timeTend, listOf) => {
